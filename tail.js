@@ -5,14 +5,14 @@ const tail = function(data) {
     newArray.push(data[i]);
     i++;
   }
-  return newArray
-}
+  return newArray;
+};
 
-// assertEqual FUNCTION 
+// assertEqual FUNCTION
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-  console.log(`✔✔✔ Assertion Passed: ' ${actual}  === ${expected}`);
-} else console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    console.log(`✔✔✔ Assertion Passed: ' ${actual}  === ${expected}`);
+  } else console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
 };
 
 
