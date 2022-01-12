@@ -2,7 +2,7 @@ const head = function(data) {
   return data[0];
 }
 
-// FUNCTION IMPLEMENTATION
+// assertEqual FUNCTION 
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
   console.log(`✔✔✔ Assertion Passed: ' ${actual}  === ${expected}`);
