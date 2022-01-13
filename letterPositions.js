@@ -17,23 +17,27 @@ const assertArraysEqual = function(array1, array2) {
 // ---------------------------------------------------------------------------------------------//
 const letterPositions = function(sentence) {
   const results = {};
-  
 
-  for (const letter of sentence) {
-  
-    if (letter !== ' ') {
-      results[letter] = [];
-      //results[letter].push('test');
+  for (let i = 0; i < sentence.length; i++) {
+    const letter = sentence[i];
+
+    if (letter === ' ') {
+      continue;
     }
 
-    for (let i = 0; i < sentence.length; i++) {
-      if (letter === sentence[i] && results[letter] !== undefined) {
-        results[letter].push(i);
-      }
+    if (!results[letter]) {
+      results[letter] = [i];
+      continue;
+    }
+
+
+    if (results[letter]) {
+      results[letter].push(i);
     }
   }
   return results;
 };
+
 
 console.log(letterPositions("lighthouse in the house"));
 assertArraysEqual(letterPositions("hello").e, [1]);
