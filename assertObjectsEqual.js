@@ -9,7 +9,7 @@ const eqArrays = function(array1, array2) {
       return false;
     }
     if (!(Array.isArray(array1[i])) && array1[i] !== array2[i]) {
-      // if the element is NOT an array and the items are NOT equal then iot will return false
+      // if the element is NOT an array and the items are NOT equal then it will return false
       return false;
     }
   } 
@@ -41,7 +41,7 @@ const assertObjectsEqual = function(actual, expected) {
   const inspect = require('util').inspect;
   
   if (eqObjects(actual,expected) === false) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} === ${expected}`)
+    console.log(`🛑🛑🛑 Assertion Failed: ${inspect(actual)} === ${inspect(expected)}`)
   } else if (eqObjects(actual,expected) === true) {
     console.log(`✅✅✅ Assertion Passed: ${inspect(actual)} === ${inspect(expected)}`)
   }
