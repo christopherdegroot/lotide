@@ -18,10 +18,11 @@ const middle = function(array) {
       middleArray.push(array[middleArrayStartingPoint +1]);
       // console.log('middleArrayStartingPoint', middleArrayStartingPoint);
 
-  } else middleArray.push(array[middleArrayStartingPoint]);
+  } else middleArray.push(array[Number(middleArrayStartingPoint)]);
 
  
   }
+  console.log(typeof middleArray);
  return middleArray;
   
   // odd return single, even return 2
