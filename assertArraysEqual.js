@@ -10,8 +10,11 @@ for (let i = 0; i < array2.length; i++) {
   arraystring2 += array2[i];
 }
   if (arraystring1 === arraystring2) {
-  console.log(`✔✔✔ Assertion Passed: ' ${array1}  === ${array2}`);
-} else console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
+    return true;
+  // console.log(`✔✔✔ Assertion Passed: ' ${array1}  === ${array2}`);
+} else 
+return false;
+// console.log(`🛑🛑🛑 Assertion Failed: ${array1} !== ${array2}`);
 };
 
 module.exports = assertArraysEqual;
