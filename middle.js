@@ -22,7 +22,7 @@ const middle = function(array) {
 
  
   }
-  console.log(typeof middleArray);
+  // console.log(typeof middleArray);
  return middleArray;
   
   // odd return single, even return 2
